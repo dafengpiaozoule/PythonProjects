@@ -4,7 +4,7 @@ z = None
 
 
 def yuju1(x, z):
-    z /= x
+    z /= y
 
 def yuju2(z):
     z += 1
