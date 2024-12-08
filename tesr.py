@@ -1,12 +1,37 @@
-#常用功能
+my_dict = {
+    "王力宏":{
+        "部门": "科技部",
+        "工资": 3000,
+        "级别": 1
+    },
+    "周杰伦":{
+        "部门": "市场部",
+        "工资": 5000,
+        "级别": 2
+    },
+    "林俊杰":{
+        "部门": "市场部",
+        "工资": 7000,
+        "级别": 3
+    },
+    "张学友":{
+        "部门": "科技部",
+        "工资": 4000,
+        "级别": 1
+    },
+    "刘德华":{
+        "部门": "科技部",
+        "工资": 6000,
+        "级别": 2
+    },
+}
+print(my_dict)
+key = my_dict.keys()
+# for x in key:
+#     print(my_dict[x][])
 
-list_bank = [21, 25, 21, 23, 22, 20]
-list_bank.append(31)
-print(list_bank)
-list_bank.extend([29, 33, 30])
-print(list_bank)
-print(list_bank.pop(0))
-print(list_bank)
-print(list_bank.pop(-1))
-print(list_bank)
-print(list_bank.index(31))
+for x in key:
+    if my_dict[x]["级别"] == 1:
+        my_dict[x]["工资"] += 1000
+
+print(my_dict)
